@@ -7,19 +7,8 @@ private:
 	MYSQL* conector;
 public:
 	void abrir_conexion() {
-		MYSQL* init = mysql_init(nullptr);
-        if (!init) {
-			conector = nullptr;
-			return;
-		}
-		MYSQL* conn = mysql_real_connect(init, "localhost", "root", "Bokunohero123.", "db_escuela", 3306, NULL, 0);
-		if (!conn) {
-			// cleanup the init handle
-			mysql_close(init);
-			conector = nullptr;
-			return;
-		}
-		conector = conn;
+		conector = mysql_init(0);
+		conector = mysql_real_connect(conector, "localhost", "root", "Admin123.", "db_escuela", 3306, NULL, 0);
 	}
 	MYSQL* getConector() {
 		return conector;
