@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Funcion fecha
+// Funcion fecha estado
 bool esFechaValida(int anio, int mes, int dia) {
 	if (mes < 1 || mes > 12) return false;
 	if (dia < 1 || dia > 31) return false;

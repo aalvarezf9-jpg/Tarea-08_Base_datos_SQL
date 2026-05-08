@@ -7,7 +7,7 @@
 
 using namespace std;
 class Estudiante : Persona {
-//atributos
+//atributoss
 private: string codigo;
 	   int id_estudiante = 0;
 //constructor
