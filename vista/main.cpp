@@ -52,7 +52,7 @@ bool validarDireccion(string texto) {
 int main() {
 	string codigo, nombres, apellidos, direccion, fecha_nacimiento;
 	int telefono = 0, id_tipo_sangre = 0, id_estudiante = 0;
-	
+
 	bool codigoValido = false;
 	const regex exp_codigo("E[0-9]{3}"); //Indica el formato del codigo
 
@@ -95,7 +95,7 @@ int main() {
 		}
 	} while (!validarDireccion(direccion));
 
-	
+
 	string tel_aux;
 	bool telValido = false;
 	do {
